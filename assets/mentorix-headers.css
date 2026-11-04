@@ -1,0 +1,182 @@
+/* Bandeau « À propos » repris sur les pages Blog et les articles. */
+#header.a-propos-header {
+  background: url("/assets/savantix-astronome.avif") calc(100% - 5rem) top / auto 100% no-repeat,
+    #c5e7ff url("/assets/ciel-mentorix.svg") center / cover no-repeat;
+}
+
+@media (max-width: 767px) {
+  #header.a-propos-header {
+    background-size: auto 72%, cover;
+    background-position: calc(100% - 2rem) bottom, center;
+  }
+}
+
+/* L’accueil garde son téléphone et ses trophées devant le ciel. */
+.section_header.a-propos-header-home {
+  background: #c5e7ff url("/assets/ciel-mentorix.svg") center / cover no-repeat;
+}
+
+#header.a-propos-header .header_component,
+#header.a-propos-header-home .header_component,
+#header .h1_spe_blog {
+  color: #082c52;
+}
+
+#header.a-propos-header-home .header_tagline,
+#header.a-propos-header-home .header_heading {
+  color: var(--brand--purple);
+}
+
+.section_header.a-propos-header-home .header_heading .text-color-purple {
+  color: inherit;
+  background-image: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+.section_header.a-propos-header-home .header_content {
+  align-items: center;
+  text-align: center;
+}
+
+.section_header.a-propos-header-home .header_heading-wrapper {
+  align-items: center;
+  width: 100%;
+}
+
+.section_header.a-propos-header-home .header_tagline {
+  width: 100%;
+  max-width: 40ch;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.section_header.a-propos-header-home .header_badge-list {
+  justify-content: center;
+  width: 100%;
+}
+
+/* Keep the centered navigation consistent at tablet and desktop widths. */
+@media (min-width: 768px) {
+  .navbar_container > .navbar_logo-link,
+  .navbar_logo-link-_mobile,
+  .menu-button {
+    display: none;
+  }
+
+  .navbar_menu {
+    position: absolute;
+    top: 2.5rem;
+    left: 50%;
+    width: max-content;
+    max-width: calc(100vw - 8rem);
+    flex: 0 0 auto;
+    margin-left: 0;
+    padding: 0;
+    transform: translateX(-50%);
+    justify-content: center;
+    overflow: visible;
+    background: transparent;
+  }
+
+  .navbar_menu::before,
+  .navbar_menu::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: clamp(4rem, 5vw, 6.5rem);
+    height: clamp(4rem, 5vw, 6.5rem);
+    transform: translateY(-50%);
+    background: url("/assets/logo-education.png") center / contain no-repeat;
+  }
+
+  .navbar_menu::before {
+    left: calc(-1 * clamp(4rem, 5vw, 6.5rem));
+  }
+
+  .navbar_menu::after {
+    right: calc(-1 * clamp(4rem, 5vw, 6.5rem));
+  }
+
+  .navbar_menu-left {
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(.25rem, .6vw, .6rem);
+    padding: 0;
+  }
+
+  .navbar_component .navbar_link {
+    width: auto;
+    padding: clamp(.5rem, 1.4vw, 2.3rem) clamp(.25rem, 1.4vw, 2.3rem);
+  }
+}
+
+.navbar_component .navbar_link {
+  color: #4d65ff;
+  font-size: 1.6875rem;
+}
+
+.navbar_component .navbar_link:hover,
+.navbar_component .navbar_link:focus-visible {
+  color: #00bfff;
+  background-color: transparent;
+}
+
+/* Fond spatial sur les trois pages principales. */
+html[data-wf-page="67a1f0b350a84c443de5e027"] .section_header.a-propos-header-home {
+  background: #080b1a url("/assets/voie-lactee-fond2.png") center / cover no-repeat;
+}
+
+html[data-wf-page="69fb177479be3927b5cbaf98"] #header.a-propos-header,
+html[data-wf-page="6a05c0a60cd3d7ceb0b29919"] #header.a-propos-header {
+  background: url("/assets/savantix-astronome.avif") calc(100% - 5rem) top / auto 100% no-repeat,
+    #080b1a url("/assets/voie-lactee-fond2.png") center / cover no-repeat;
+}
+
+html[data-wf-page="67a1f0b350a84c443de5e027"] #header.a-propos-header-home .header_heading,
+html[data-wf-page="67a1f0b350a84c443de5e027"] #header.a-propos-header-home .header_tagline,
+html[data-wf-page="69fb177479be3927b5cbaf98"] #header .h1_spe_blog,
+html[data-wf-page="69fb177479be3927b5cbaf98"] #header .paragraph-72,
+html[data-wf-page="6a05c0a60cd3d7ceb0b29919"] #header .h1_spe_blog {
+  color: #fed636;
+}
+
+@supports (background-clip: text) {
+  html[data-wf-page="67a1f0b350a84c443de5e027"] #header.a-propos-header-home .header_heading,
+  html[data-wf-page="67a1f0b350a84c443de5e027"] #header.a-propos-header-home .header_tagline,
+  html[data-wf-page="69fb177479be3927b5cbaf98"] #header .h1_spe_blog,
+  html[data-wf-page="69fb177479be3927b5cbaf98"] #header .paragraph-72,
+  html[data-wf-page="6a05c0a60cd3d7ceb0b29919"] #header .h1_spe_blog {
+    background-image: linear-gradient(110deg, #fed636 15%, #fff4a3 48%, #fed636 68%, #ffc62a);
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+html[data-wf-page="69fb177479be3927b5cbaf98"] #header .paragraph-72 {
+  font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+  html[data-wf-page="67a1f0b350a84c443de5e027"] .navbar_component .navbar_link,
+  html[data-wf-page="69fb177479be3927b5cbaf98"] .navbar_component .navbar_link,
+  html[data-wf-page="6a05c0a60cd3d7ceb0b29919"] .navbar_component .navbar_link {
+    color: #fff;
+  }
+}
+
+.navbar_component .navbar_link:hover,
+.navbar_component .navbar_link:focus-visible,
+html .navbar_component .navbar_link:hover,
+html .navbar_component .navbar_link:focus-visible {
+  color: #00bfff;
+  background-color: transparent;
+}
+
+@media (max-width: 767px) {
+  html[data-wf-page="69fb177479be3927b5cbaf98"] #header.a-propos-header,
+  html[data-wf-page="6a05c0a60cd3d7ceb0b29919"] #header.a-propos-header {
+    background-size: auto 72%, cover;
+    background-position: calc(100% - 2rem) bottom, center;
+  }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="ciel" x2="0" y2="1">
+      <stop stop-color="#addcff"/>
+      <stop offset="1" stop-color="#e2f3ff"/>
+    </linearGradient>
+    <path id="nuage" d="M0 46a22 22 0 0 1 25-22 35 35 0 0 1 66-5 26 26 0 1 1 15 49H22A22 22 0 0 1 0 46Z"/>
+  </defs>
+  <path fill="url(#ciel)" d="M0 0h1200v360H0z"/>
+  <g fill="#aab5c2" opacity=".48">
+    <use href="#nuage" transform="translate(52 81) scale(1.35)"/>
+    <use href="#nuage" transform="translate(480 245) scale(1.1)"/>
+    <use href="#nuage" transform="translate(936 55) scale(1.45)"/>
+  </g>
+</svg>
