@@ -188,3 +188,20 @@ html .navbar_component .navbar_link:focus-visible {
     background-position: calc(100% - 16rem) bottom, center;
   }
 }
+
+html[data-wf-item-slug] #header.a-propos-header {
+  background: #080b1a url("/assets/voie-lactee-fond2.png") center / cover no-repeat;
+}
+
+html[data-wf-item-slug] #header .h1_spe_blog {
+  color: #fed636;
+}
+
+@supports (background-clip: text) {
+  html[data-wf-item-slug] #header .h1_spe_blog {
+    background-image: linear-gradient(110deg, #fed636 15%, #fff4a3 48%, #fed636 68%, #ffc62a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

@@ -16,3 +16,5 @@ html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-family:sans-se
 .social-media-wrapper {
   flex-wrap: wrap;
 }
+
+.section_footer{background:#080b1a url('/assets/voie-lactee-fond2.png') center/cover no-repeat}
