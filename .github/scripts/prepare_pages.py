@@ -27,7 +27,8 @@ def prefix_css_path(match):
 
 
 for file_path in root.rglob("*"):
-    if file_path.suffix.lower() not in {".html", ".css", ".js"}:
+    # Keep JavaScript assets byte-for-byte identical for subresource integrity.
+    if file_path.suffix.lower() not in {".html", ".css"}:
         continue
     content = file_path.read_text(encoding="utf-8")
     content = quoted_root_path.sub(prefix_quoted_path, content)
