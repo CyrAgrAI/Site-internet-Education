@@ -129,8 +129,16 @@ html[data-wf-page="67a1f0b350a84c443de5e027"] .section_header.a-propos-header-ho
 
 html[data-wf-page="69fb177479be3927b5cbaf98"] #header.a-propos-header,
 html[data-wf-page="6a05c0a60cd3d7ceb0b29919"] #header.a-propos-header {
-  background: url("/assets/savantix-astronome.avif") calc(100% - 5rem) top / auto 100% no-repeat,
+  background: url("/assets/savantix-astronome.avif") calc(100% - 16rem) top / auto 100% no-repeat,
     #080b1a url("/assets/voie-lactee-fond2.png") center / cover no-repeat;
+}
+
+html[data-wf-page="69fb177479be3927b5cbaf98"] #header.a-propos-header {
+  background-image: url("/assets/savantix-pedagogue.avif"), url("/assets/voie-lactee-fond2.png");
+}
+
+html[data-wf-page="6a05c0a60cd3d7ceb0b29919"] #header.a-propos-header {
+  background-image: url("/assets/savantix-naturaliste.avif"), url("/assets/voie-lactee-fond2.png");
 }
 
 html[data-wf-page="67a1f0b350a84c443de5e027"] #header.a-propos-header-home .header_heading,
@@ -177,6 +185,6 @@ html .navbar_component .navbar_link:focus-visible {
   html[data-wf-page="69fb177479be3927b5cbaf98"] #header.a-propos-header,
   html[data-wf-page="6a05c0a60cd3d7ceb0b29919"] #header.a-propos-header {
     background-size: auto 72%, cover;
-    background-position: calc(100% - 2rem) bottom, center;
+    background-position: calc(100% - 16rem) bottom, center;
   }
 }
