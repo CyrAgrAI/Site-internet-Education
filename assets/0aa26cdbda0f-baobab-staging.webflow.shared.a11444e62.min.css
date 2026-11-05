@@ -18,3 +18,8 @@ html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-family:sans-se
 }
 
 .section_footer{background:#080b1a url('/assets/voie-lactee-fond2.png') center/cover no-repeat}
+.section_footer,.section_footer .footer_link,.section_footer .text-grey{color:#fed636}
+.section_footer .text-grey{opacity:1}
+
+.badge_image.footer[src$="mentorix-telegram-badge.svg"]{height:5rem;width:auto;max-width:100%}
+@media(max-width:767px){.section_footer .badge_image.footer[src$="mentorix-telegram-badge.svg"]{height:2.5rem}}

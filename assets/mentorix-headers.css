@@ -197,11 +197,31 @@ html[data-wf-item-slug] #header .h1_spe_blog {
   color: #fed636;
 }
 
+html[data-wf-item-slug] #header .elements_item_hero_article .benefits_item-text {
+  color: #fff;
+}
+
 @supports (background-clip: text) {
   html[data-wf-item-slug] #header .h1_spe_blog {
     background-image: linear-gradient(110deg, #fed636 15%, #fff4a3 48%, #fed636 68%, #ffc62a);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar_component .navbar_menu.w--nav-menu-open,
+  .navbar_component .navbar_menu[data-nav-menu-open] {
+    background: #080b1a url("/assets/voie-lactee-fond2.png") center / cover no-repeat;
+  }
+
+  .navbar_component .navbar_menu.w--nav-menu-open .navbar_link,
+  .navbar_component .navbar_menu.w--nav-menu-open .navbar_link:hover,
+  .navbar_component .navbar_menu.w--nav-menu-open .navbar_link:focus-visible,
+  .navbar_component .navbar_menu[data-nav-menu-open] .navbar_link,
+  .navbar_component .navbar_menu[data-nav-menu-open] .navbar_link:hover,
+  .navbar_component .navbar_menu[data-nav-menu-open] .navbar_link:focus-visible {
+    color: #fff;
   }
 }
