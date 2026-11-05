@@ -6,6 +6,15 @@ Badges sévérité : 🔴 critique · 🟠 moyen · 🟡 faible. Dates en heure 
 
 ## [Unreleased]
 
+## [0.3.0] — 2026-11-05 10:47Z
+> 🤖 agent-versionnage gpt-6-luna
+> 🧮 n/a tokens (entrée n/a · sortie n/a, dont cache n/a) · ⏱️ n/a effectif utilisateur · ⚡ n/a tokens/min effectif · 👥 n/a cumul agents · ⚡ n/a tokens/min agents · 📁 0 sessions (partiel)
+🟡 LOW
+
+### Changed
+- Remplacement des badges par un accès Telegram, harmonisation du pied de page et du menu mobile, et ajustements des bandeaux et blocs d’auteur du blog (commit `21dcf77`).
+- Enregistrement de la version 0.2.1 dans le journal (commit `0c77d52`).
+
 ## [0.2.1] — 2026-11-04 21:16Z
 > 🤖 agent-versionnage gpt-6-luna
 > 🧮 n/a tokens (entrée n/a · sortie n/a, dont cache n/a) · ⏱️ n/a effectif utilisateur · ⚡ n/a tokens/min effectif · 👥 n/a cumul agents · ⚡ n/a tokens/min agents · 📁 0 sessions (partiel)
